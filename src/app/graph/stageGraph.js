@@ -10,13 +10,13 @@ function StageGraph({ id, points, columnNames }) {
   useEffect(() => {
     // Set timeout so the width and height calculation can occur
     // after the component has rendered
-    setTimeout(() => {
+    // setTimeout(() => {
       // Get the canvas from the DOM
       const canvas = document.querySelector(`#${id}`);
 
       // Generate the graph
       generateGraph(canvas, points);
-    });
+    // });
 
   }, [points, id]);
 

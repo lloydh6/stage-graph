@@ -1,4 +1,4 @@
-function generateGraph(canvas, points) {
+function generateGraph(canvas, points, options) {
   if (canvas) {
     // Make the canvas visually fill the positioned parent
     canvas.style.width = '100%';
@@ -16,13 +16,13 @@ function generateGraph(canvas, points) {
 
     // Create the gradient for the even segments
     const evenGradient = canvasContext.createLinearGradient(0, 0, 0, 170);
-    evenGradient.addColorStop(0, '#674699');
-    evenGradient.addColorStop(1, '#883F95');
+    evenGradient.addColorStop(0, '#f39c12');
+    evenGradient.addColorStop(1, '#e67e22');
 
     // Create the gradient for the odd segments
     const oddGradient = canvasContext.createLinearGradient(0, 0, 0, 170);
-    oddGradient.addColorStop(0, '#894096');
-    oddGradient.addColorStop(1, '#C54CB2');
+    oddGradient.addColorStop(0, '#d35400');
+    oddGradient.addColorStop(1, '#e74c3c');
 
     // Get the width of each
     const segmentWidth = canvas.width / points.length;
